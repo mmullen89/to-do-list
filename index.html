@@ -10,11 +10,33 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/application.js"></script>
-
+    <script src="https://kit.fontawesome.com/f3f6166488.js" crossorigin="anonymous"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Mulish:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
   </head>
   <body>
+    
+    <div class="container-fluid">
+      <div class="title">
+        <h1 class="main-title">To Do List</h1>
+      </div>
+      <div id="toDoContent">
+        <form class="newEntry">
+          <input class="newTaskInput" type="text" placeholder="What needs doing?" required />
+          <button class="btn btn-primary btn-sm addButton">Add To Do</button>
+        </form>
+        <div id = "toDoList">
+        </div>  
+        <div class="filterButtons">
+          <button class="btn btn-primary btn-sm filter" id="showAll">Show All</button>
+          <button class="btn btn-primary btn-sm filter" id="showActive">Show Active</button>
+          <button class="btn btn-primary btn-sm filter" id="showCompleted">Show Completed</button>
+        </div>
+      </div>
+    </div>
 
   </body>
 </html>

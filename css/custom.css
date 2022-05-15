@@ -1,0 +1,111 @@
+body {
+  background-color: #5a0989;
+}
+
+.container-fluid {
+  height:100vh;
+  max-width:900px;
+}
+
+h1 {
+  font-size: 4.5em;
+  color: #2fe1e7;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight:700;
+}
+
+.title {
+  padding-bottom:20px;
+}
+
+#toDoContent {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding: 20px 0;
+}
+
+#toDoList {
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  align-items: center;
+}
+
+.listItem, .newTaskInput, .addButton, .filterButtons {
+  font-family: 'Mulish', sans-serif;
+}
+
+.btn {
+  background-color: #e30086;
+}
+
+.filterButtons {
+  display:flex;
+  flex-direction:row;
+  padding-top:20px;
+}
+
+.filter {
+  margin: 0px 5px;
+}
+
+.btn:hover {
+  background-color: #17d4d9;
+  transition: background-color 0.3s;
+}
+
+.listItem {
+  width:85%;
+  font-size: 1.8rem;
+  border-bottom: 1px solid rgb(196, 191, 191);
+  padding:15px;
+}
+
+.listItem:hover {
+  background-color:rgb(241, 241, 241);
+  transition: background-color 0.5s;
+}
+
+.removeButton {
+  float:right;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.markComplete {
+  padding-right:5px;
+}
+
+.newEntry {
+  display:flex;
+  width:60%;
+  padding-bottom:10px;
+}
+
+.newTaskInput {
+  width:80%;
+  height:40px;
+}
+
+.addButton {
+  margin-left:20px;
+}
+
+.fa-circle-minus {
+  color: rgb(236, 65, 65);
+}
+
+.fa-circle-minus:hover {
+  color:rgb(44, 1, 1);
+  transition: color 0.5s;
+}
+
+
+
